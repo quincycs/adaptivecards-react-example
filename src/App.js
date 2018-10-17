@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import CardExample from './CardExample';
+import AdaptiveCard from './AdaptiveCard';
+
 class App extends Component {
+
+  _cardActionExecuted = (action) => {
+    console.log("executed action:"+JSON.stringify(action));
+  }
+
   render() {
     return (
       <div className="App">
@@ -19,6 +27,12 @@ class App extends Component {
           >
             Learn React
           </a>
+
+          <div style={{maxWidth: '400px', padding: '50px'}}>
+            <AdaptiveCard 
+              card={CardExample} 
+              onExecuteAction={this._cardActionExecuted} />
+          </div>
         </header>
       </div>
     );
