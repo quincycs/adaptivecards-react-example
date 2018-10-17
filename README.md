@@ -1,4 +1,4 @@
-## A minimal react component for microsoft/adaptivecards.
+## A minimal react component for [microsoft/adaptivecards](https://github.com/Microsoft/AdaptiveCards).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then I added the minimal react component.
 
