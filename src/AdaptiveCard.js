@@ -1,7 +1,7 @@
 import React from 'react';
 import * as AdaptiveCardsAPI from 'adaptivecards';
 
-class AdaptiveCard extends React.Component {
+class AdaptiveCard extends React.PureComponent {
     componentDidMount() {
         const { card, onExecuteAction, hostConfig } = this.props;
         const adaptiveCard = new AdaptiveCardsAPI.AdaptiveCard();
